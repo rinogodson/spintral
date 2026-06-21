@@ -124,7 +124,7 @@ function love.update(dt)
 	end
 end
 
-function love.mousepressed(button)
+function love.mousepressed(x, y, button, istouch, presses)
 	if button == 1 and Ball.state == "floating" then
 		Ball.state = "attached"
 		DeployRods()
